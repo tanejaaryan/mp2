@@ -78,7 +78,7 @@ export default function ListView() {
       return ascending ? cmp : -cmp;
     });
     return arr;
-  }, [all, query, sortKey, ascending]);
+  }, [all, query, sortKey, ascending, pokemonDetails]);
 
   React.useEffect(() => {
     // Keep detail prev/next in sync with currently visible list
